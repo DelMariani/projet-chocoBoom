@@ -1,0 +1,176 @@
+* { /* version Desktop */
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1b8b8f;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #fbfcf8;
+    width: 70%;
+    margin: 20px auto;
+    line-height: 2em;
+}
+
+h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    font-family: 'PT Sans Narrow', sans-serif;
+    font-size: 1.4em;
+    text-transform: uppercase;
+    text-align: center;
+    padding: 1vh;
+}
+
+header {
+    text-align: center;
+}
+
+nav {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    text-decoration: none;
+    font-size: 1.6em;
+    color: #fbfcf8;
+    letter-spacing: -2px;
+    padding: 1.5vh 4vh;
+    transition-duration: 0.6s;
+    transition-timing-function: ease;
+}
+
+nav a:hover {
+    background-color: #a79189;
+}
+
+section {
+    width: 70%;
+    margin: 2vh;
+}
+
+aside {
+    background-color: #fbfcf8;
+    width: 30%;
+    text-align: justify;
+}
+
+#carre-choco, h2 {
+    border-radius: 10px;
+    margin-bottom: 5vh;
+}
+
+nav, h2 {
+    background-color: #5c3e2e;
+}
+
+.para-inver {
+    color: #89766a;
+}
+
+.column {
+    padding: 3vh;
+}
+
+.d-flex {
+    display: flex;
+}
+
+
+@media (min-width: 561px) and (max-width: 960px) { /* tablettes tout format */
+ 
+    body {
+        width:100%
+    }
+
+    section, aside {
+        width: 100%;
+    }
+
+    .container2 {
+        flex-direction: column;
+    }
+
+    #carre-choco {
+        margin: 2vh;
+    }
+}
+
+@media (max-width: 560px) { /* smartphone tout format */
+   
+    body {
+        width: 100%;
+        
+    }
+
+    .navbar {
+        flex-direction: column;
+        height: 100%;
+    }
+
+    main {
+        justify-content: center;
+    }
+
+
+    aside {
+        display: none;
+    }
+
+    #carre-choco {
+        max-width: 100%;
+        margin-top: 2vh;
+    }
+    
+}
+
+
+
+
+/*Question 1
+Vous devez dans un premier temps faire la version "desktop" du site.
+
+Indice
+Vous devrez utiliser la police PT Sans Narrow pour les titres <h1>, <h2>, <h3> et la police Open Sans pour le texte.
+
+Taille de 1.4em pour les titres <h1>,
+<h2>et <h3>
+
+Taille de 1.6em pour le texte affiché dans la balise <nav>
+
+Les contours de l'image principale et des encarts de titre auront des bords arrondis de 10pixels.
+
+Afin de vous faciliter le travail, vous devrez déclarer pour tous les éléments HTML la propriété box-sizing à border-box. Ainsi la propriété width (et/ou height) inclura la marge interne(padding)et la bordure (border) de chaque élément HTML.
+
+De cette façon, il n'y aura plus besoin de se soucier de la marge interne des éléments mis en jeu.
+
+Indice
+En mode Desktop, vous donnerez la largeur 70% au bloc de gauche et 30% au bloc de droite.
+
+Question 2
+Le rendu Tablette sera actif lorsque la largeur de la fenêtre de votre navigateur sera inférieure à 960 pixels.
+
+Dans ce contexte, le bloc <aside> sera affiché en-dessous du bloc <section>.
+
+Le rendu Mobile sera actif lorsque la largeur de la fenêtre de votre navigateur sera inférieure à 560 pixels.
+
+Dans ce contexte, le bloc <aside> ne sera pas affiché.
+
+Vous pourrez limiter la largeur du contenu à 80% de la largeur du navigateur au maximum.
+
+Visualisez le résultat attendu ci-dessous
+
+Mode tablette
+
+Mode téléphone
+
+Question 3
+Animation du site avec des transitions.
+
+Découvrez comment apporter du dynamisme et de l'animation à votre page web en utilisant uniquement les transitions de CSS3 à partir de la source d'informations suivantes :
+
+Alsacreations : transitions css3
+
+Pour obtenir le changement de couleur de l'arrière-plan des éléments du Menu de navigation et ceci au moment du survol de la souris, vous utiliserez la propriété CSS3 : transition.
+
+Ainsi pour les éléments du Menu de navigation, le changement de couleur de l'arrière plan se fera en 0.6 secondes vers la couleur #a79189 et il sera de type ease. */
